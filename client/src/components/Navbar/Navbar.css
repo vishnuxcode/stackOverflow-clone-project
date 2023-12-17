@@ -1,0 +1,101 @@
+nav{
+    min-height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-top: solid 3px #ef8236;
+    box-shadow: 0 1px 0 #00000033;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Liberation Sans", sans-serif;
+}
+
+.navbar{
+    height: 100%;
+    min-width: 85%;
+    display: flex;
+
+    align-items: center;
+    margin-left: 5px;
+}
+
+#logo{
+    width:170px;
+    height: 50px;
+    background-image: url('../../assets/assets.svg');
+    background-repeat: no-repeat;
+    background-position: 12px -493px;
+    border-radius: 0;
+    }
+
+.nav-item{
+    margin: 0 3px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(123, 123, 123);
+    transition: 0.2s;
+}
+.nav-item:hover{
+    background-color: rgb(226, 232, 233);
+}
+
+.nav-btn{
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+form{
+    min-width:45%;
+    height:18px;
+    border-radius: 7px;
+    padding:6px;    
+    border: 1px solid rgb(186, 191, 197);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: text;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+form>label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+}
+form>label>svg{
+    filter: invert(40%);
+}
+form>input{
+    border: none;
+    outline:none;
+    width:100%;
+    height:18px;
+    padding-left:4px;
+}
+form:focus-within{
+    box-shadow: 0 0 2px 3px rgb(194, 223, 235);
+}
+
+#login-btn, #signup-btn{
+    border-radius: 7px;
+}
+#login-btn{
+    color: rgb(27, 117, 208);
+    border:1px solid rgb(27, 117, 208);
+    padding: 8px;
+    font-size: 13px;
+}
+#signup-btn{
+    color: white;
+    background-color: rgb(27, 117, 208);
+    padding: 9px;
+    font-size: 15px;
+}
+#signup-btn:hover{
+    background-color: rgb(21, 92, 162);
+}
